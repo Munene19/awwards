@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>New Vote</title>
+  <title>New Post</title>
   {{form.media}}
 
 {% block styles %} {% bootstrap_css %}
@@ -19,11 +19,8 @@
 
 <body>
   {% block content %}
-  <br><br><br><br>
-
-
-  
-  <form  action="{%url 'rating' project.pk%}" method="post" enctype="multipart/form-data">
+  <br><br><br><br><br><br><br>
+  <form  action="{%url 'new-project'%}" method="post" enctype="multipart/form-data">
     {%csrf_token%}
 
     {% bootstrap_form form %}
