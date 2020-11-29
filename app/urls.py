@@ -1,4 +1,5 @@
 from django.urls import path
+from django.conf.urls import url
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -17,8 +18,8 @@ urlpatterns = [
     path('api/profile/', views.ProfileList.as_view(), name='profile-API'),
     path('api/project/', views.ProjectList.as_view(), name='project-API'),
     path('search/', views.search_results, name='search_results'),
-    path('vote/(?P<id>\d+)', views.rating,name='rating'),
-    path('newcomment/(\d+)/', views.new_comment, name='new-comment'),
+    url(r'^vote/(?P<id>\d+)', views.rating,name='rating'),
+    url(r'^newcomment/(\d+)/$', views.new_comment, name='new-comment'),
     
 
 ]

@@ -39,7 +39,9 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="{%url 'user-profile' %}" >My Profile</a><br>
-                <a class="dropdown-item" href="{%url 'edit-profile' %}" >Edit my Profile</a>            
+                <a class="dropdown-item" href="{%url 'edit-profile' %}" >Edit my Profile</a>  
+                <a class="dropdown-item" href="{% url 'profile-API' %}" >API for Profile</a>
+                <a class="dropdown-item" href="{% url 'project-API' %}" >API for Project</a>          
             </div>
           </li>
         
