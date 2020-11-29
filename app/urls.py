@@ -8,8 +8,9 @@ import datetime as dt
 from tinymce.models import HTMLField
 from django.contrib.auth import views as auth_views
 
+
 urlpatterns = [
-    path('home/', views.welcome, name='welcome' ),
+    path('', views.welcome, name='welcome' ),
     path('profile/', views.user_profile, name='user-profile'),
     path('edit/profile', views.edit_profile, name="edit-profile"),
     path('new/project',views.new_project, name ='new-project'),

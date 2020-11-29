@@ -1,7 +1,6 @@
 {%extends "users/base.html"%}
 
 {% load bootstrap4 %} 
-{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 
@@ -11,9 +10,6 @@
 
   <title>Update profile</title>
   {{form.media}}
-
-{% block styles %} {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/post.css' %}"> {% endblock %}
 
 </head>
 
