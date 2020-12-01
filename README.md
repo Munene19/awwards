@@ -1,12 +1,13 @@
-# Awwards app
-This a Django app that functions in a similarly to https://www.awwwards.com/. The app displays users' projects and their details for other users to rate and review
+# Awwards App
+This a Django app that functions similarly to https://www.awwwards.com/. The app displays users' projects and their details for other users to rate and review
 
 
 # Author
-Munene Mike
-
+Mike Munene
 
 # User Stories
+Create an account.
+
 Sign in to the application.
 
 Upload project to the website.
